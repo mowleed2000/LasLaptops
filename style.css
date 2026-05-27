@@ -731,14 +731,17 @@ body.dark .card-image-wrapper {
     left: 12px;
     font-size: 0.72rem;
     font-weight: 800;
-    padding: 4px 10px;
+    padding: 6px 12px;
     border-radius: 6px;
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     z-index: 2;
-    background-color: var(--badge-excellent-bg);
-    color: var(--badge-excellent-text);
+    background-color: #10b981;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.35);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .stock-badge {
