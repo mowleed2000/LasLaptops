@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAS Laptops | Premium Refurbished Microsoft Surface Store</title>
+    <meta name="description" content="Certified refurbished Microsoft Surface Pro, Laptop, Book, and Go devices. 12-month warranty, free shipping, and diagnostic guarantee.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-laptop-code"></i>
+                <span>LAS <span class="accent-text">LAPTOPS</span></span>
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#store" class="nav-link">Shop</a>
+                <a href="../las-tech-repairs/index.html" class="nav-link-repair" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i> Repair Service</a>
+                <a href="#why-buy" class="nav-link">Contact</a>
+                <a href="#why-buy" class="nav-link">FAQs</a>
+                <div class="nav-actions">
+                    <button class="cart-btn" id="cartToggleBtn">
+                        <i class="fa-solid fa-cart-shopping"></i> Cart <span class="cart-count-badge" id="cartBadge">0</span>
+                    </button>
+                    <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text-col">
+                <span class="hero-badge"><i class="fa-solid fa-award"></i> CERTIFIED REFURBISHED DEALS</span>
+                <h1>Premium Refurbished <br><span class="accent-text">Microsoft Surface</span> Laptops</h1>
+                <p class="hero-lead">Get high-end enterprise hardware at a fraction of retail prices. Every device is backed by our rigorous diagnostics guarantee, clean windows installation, and full coverage warranty.</p>
+                <div class="hero-cta-group">
+                    <a href="#store" class="btn btn-primary">Shop the Range</a>
+                    <a href="#store" class="btn btn-ghost">Get Free Delivery Today <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-image-col">
+                <div class="hero-image-container">
+                    <span class="hero-image-badge">SALE</span>
+                    <img src="laptop.jpg" alt="Microsoft Surface lineup mockup" class="hero-img">
+                    <div class="hero-price-chip">
+                        <div class="price-chip-val">From £199</div>
+                        <div class="price-chip-rrp">RRP £499</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar Section -->
+    <section class="trust-bar">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <div class="trust-icon-circle"><i class="fa-solid fa-star"></i></div>
+                <div class="trust-content">
+                    <div class="trust-number">700+</div>
+                    <div class="trust-label">Verified Orders</div>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon-circle"><i class="fa-solid fa-certificate"></i></div>
+                <div class="trust-content">
+                    <div class="trust-number">12-Month</div>
+                    <div class="trust-label">Warranty Included</div>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon-circle"><i class="fa-solid fa-truck"></i></div>
+                <div class="trust-content">
+                    <div class="trust-number">Free UK</div>
+                    <div class="trust-label">Next-Day Delivery</div>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon-circle"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+                <div class="trust-content">
+                    <div class="trust-number">Value</div>
+                    <div class="trust-label">Pricing Checked</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="store-section" id="store">
+        <div class="container">
+            <div class="store-header text-center">
+                <h2>Browse the Range</h2>
+                <p class="store-subtitle">Every device hand-tested, diagnostics verified, ready to ship.</p>
+                <div class="accent-line"></div>
+            </div>
+
+            <!-- Filter and Sort Bar -->
+            <div class="filter-sort-bar">
+                <div class="filter-pills-wrapper">
+                    <div class="filter-pills" id="filterPills">
+                        <button class="filter-pill active" data-filter="all">All</button>
+                        <button class="filter-pill" data-filter="pro">Surface Pro</button>
+                        <button class="filter-pill" data-filter="laptop">Surface Laptop</button>
+                        <button class="filter-pill" data-filter="book">Surface Book</button>
+                        <button class="filter-pill" data-filter="go">Surface Go</button>
+                    </div>
+                </div>
+                
+                <div class="sort-selector-wrapper">
+                    <label for="sortSelect">Sort by: </label>
+                    <select id="sortSelect" class="sort-dropdown">
+                        <option value="default">Default</option>
+                        <option value="price-asc">Price ↑ (Low to High)</option>
+                        <option value="price-desc">Price ↓ (High to Low)</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Cards Grid -->
+            <div class="product-grid" id="productGrid">
+
+                <!-- Card 188414041459 -->
+                <div class="product-card" data-category="pro" data-price="199.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/8-EAAeSwCmBqEbI5/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge good">Defect / Reduced Price</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i5 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188414041459" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/8-EAAeSwCmBqEbI5/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i5"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Defect / Reduced Price"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188390340207 -->
+                <div class="product-card" data-category="pro" data-price="299.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/-NMAAeSwVqBqCMZA/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i5 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£299.99</div>
+                            <div class="product-rrp">RRP £649</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188390340207" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="299.99" 
+                                data-image="https://i.ebayimg.com/images/g/-NMAAeSwVqBqCMZA/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i5"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£299.99"
+                                data-rrp="£649">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188291486366 -->
+                <div class="product-card" data-category="pro" data-price="199.99" data-date="2026-04-01">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/E4QAAeSwcnFp48Qd/s-l500.webp" alt="Microsoft Surface Pro 7 Plus image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge good">Defect / Reduced Price</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7 Plus</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188291486366" 
+                                data-title="Microsoft Surface Pro 7 Plus" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/E4QAAeSwcnFp48Qd/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7 Plus"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Defect / Reduced Price"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188290865977 -->
+                <div class="product-card" data-category="pro" data-price="299.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/xScAAeSwCB9p44eX/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£299.99</div>
+                            <div class="product-rrp">RRP £649</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188290865977" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="299.99" 
+                                data-image="https://i.ebayimg.com/images/g/xScAAeSwCB9p44eX/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£299.99"
+                                data-rrp="£649">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188136973701 -->
+                <div class="product-card" data-category="book" data-price="199.99" data-date="2026-04-03">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/1fsAAeSwytJproLK/s-l500.webp" alt="Microsoft Surface Book 1 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Book 1</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 1TB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188136973701" 
+                                data-title="Microsoft Surface Book 1" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/1fsAAeSwytJproLK/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Book 1"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="1TB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188418898378 -->
+                <div class="product-card" data-category="pro" data-price="199.99" data-date="2026-05-06">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/yjEAAeSwZqJqEzOa/s-l500.webp" alt="Microsoft Surface Pro 6 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge good">Touch Issue / Reduced</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 6</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 512GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188418898378" 
+                                data-title="Microsoft Surface Pro 6" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/yjEAAeSwZqJqEzOa/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 6"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="512GB SSD"
+                                data-condition="Touch Issue / Reduced"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188395214915 -->
+                <div class="product-card" data-category="pro" data-price="349.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/IgQAAeSwU9BqCr0w/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£349.99</div>
+                            <div class="product-rrp">RRP £749</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188395214915" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="349.99" 
+                                data-image="https://i.ebayimg.com/images/g/IgQAAeSwU9BqCr0w/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£349.99"
+                                data-rrp="£749">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188296652137 -->
+                <div class="product-card" data-category="pro" data-price="349.99" data-date="2026-04-05">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/uNUAAeSwmT1p47jn/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 8</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£349.99</div>
+                            <div class="product-rrp">RRP £749</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188296652137" 
+                                data-title="Microsoft Surface Pro 8" 
+                                data-price="349.99" 
+                                data-image="https://i.ebayimg.com/images/g/uNUAAeSwmT1p47jn/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 8"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£349.99"
+                                data-rrp="£749">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188223178280 -->
+                <div class="product-card" data-category="pro" data-price="199.99" data-date="2026-04-05">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/ogUAAeSw16ZpyX5H/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge good">Pressure Marks</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 8</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 512GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188223178280" 
+                                data-title="Microsoft Surface Pro 8" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/ogUAAeSw16ZpyX5H/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 8"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="512GB SSD"
+                                data-condition="Pressure Marks"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188291094974 -->
+                <div class="product-card" data-category="pro" data-price="199.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/0kIAAeSwAV9p45uM/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 128GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188291094974" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/0kIAAeSwAV9p45uM/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="128GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188369429762 -->
+                <div class="product-card" data-category="pro" data-price="379.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/6ykAAeSwL4ppqKuH/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£379.99</div>
+                            <div class="product-rrp">RRP £849</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188369429762" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="379.99" 
+                                data-image="https://i.ebayimg.com/images/g/6ykAAeSwL4ppqKuH/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£379.99"
+                                data-rrp="£849">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187725326545 -->
+                <div class="product-card" data-category="laptop" data-price="299.99" data-date="2026-05-24">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/hr8AAeSwRFpo~rTs/s-l500.webp" alt="Microsoft Surface Laptop 4 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Laptop 4</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 512GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£299.99</div>
+                            <div class="product-rrp">RRP £649</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187725326545" 
+                                data-title="Microsoft Surface Laptop 4" 
+                                data-price="299.99" 
+                                data-image="https://i.ebayimg.com/images/g/hr8AAeSwRFpo~rTs/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Laptop 4"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="512GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£299.99"
+                                data-rrp="£649">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187592067310 -->
+                <div class="product-card" data-category="laptop" data-price="200.02" data-date="2026-04-03">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/7wUAAeSw2AJo0wO5/s-l500.webp" alt="Microsoft Surface Book 1 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Book 1</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£200.02</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187592067310" 
+                                data-title="Microsoft Surface Book 1" 
+                                data-price="200.02" 
+                                data-image="https://i.ebayimg.com/images/g/7wUAAeSw2AJo0wO5/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Book 1"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£200.02"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187886595171 -->
+                <div class="product-card" data-category="pro" data-price="199.99" data-date="2026-04-05">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/DyMAAeSw~RBpUDcb/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge good">Defect / Reduced Price</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 8</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 128GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187886595171" 
+                                data-title="Microsoft Surface Pro 8" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/DyMAAeSw~RBpUDcb/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 8"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="128GB SSD"
+                                data-condition="Defect / Reduced Price"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188395252941 -->
+                <div class="product-card" data-category="book" data-price="199.99" data-date="2026-05-14">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/-woAAeSwNF5qCr~y/s-l500.webp" alt="Microsoft Surface Book image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Book</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£199.99</div>
+                            <div class="product-rrp">RRP £449</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188395252941" 
+                                data-title="Microsoft Surface Book" 
+                                data-price="199.99" 
+                                data-image="https://i.ebayimg.com/images/g/-woAAeSwNF5qCr~y/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Book"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£199.99"
+                                data-rrp="£449">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188016166970 -->
+                <div class="product-card" data-category="pro" data-price="349.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/t40AAeSwIkZpf8~Q/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£349.99</div>
+                            <div class="product-rrp">RRP £749</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188016166970" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="349.99" 
+                                data-image="https://i.ebayimg.com/images/g/t40AAeSwIkZpf8~Q/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£349.99"
+                                data-rrp="£749">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188222447915 -->
+                <div class="product-card" data-category="pro" data-price="349.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/BQ0AAeSwEOBpyTR~/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Excellent</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£349.99</div>
+                            <div class="product-rrp">RRP £749</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188222447915" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="349.99" 
+                                data-image="https://i.ebayimg.com/images/g/BQ0AAeSwEOBpyTR~/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Excellent"
+                                data-price="£349.99"
+                                data-rrp="£749">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188033050649 -->
+                <div class="product-card" data-category="pro" data-price="399.99" data-date="2026-04-05">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/Ly0AAeSwdGlphk6F/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 8</h3>
+                        <p class="product-specs">Intel Core i5 · 8GB RAM · 128GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£399.99</div>
+                            <div class="product-rrp">RRP £899</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188033050649" 
+                                data-title="Microsoft Surface Pro 8" 
+                                data-price="399.99" 
+                                data-image="https://i.ebayimg.com/images/g/Ly0AAeSwdGlphk6F/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 8"
+                                data-cpu="Intel Core i5"
+                                data-ram="8GB RAM"
+                                data-storage="128GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£399.99"
+                                data-rrp="£899">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187890023386 -->
+                <div class="product-card" data-category="laptop" data-price="299.99" data-date="2026-05-24">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/RKAAAeSwyPRpUX4Z/s-l500.webp" alt="Microsoft Surface Laptop 4 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Laptop 4</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£299.99</div>
+                            <div class="product-rrp">RRP £649</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187890023386" 
+                                data-title="Microsoft Surface Laptop 4" 
+                                data-price="299.99" 
+                                data-image="https://i.ebayimg.com/images/g/RKAAAeSwyPRpUX4Z/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Laptop 4"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£299.99"
+                                data-rrp="£649">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188222330797 -->
+                <div class="product-card" data-category="pro" data-price="349.99" data-date="2026-04-01">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/kmgAAeSwLydpyShn/s-l500.webp" alt="Microsoft Surface Pro 7 Plus image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7 Plus</h3>
+                        <p class="product-specs">Intel Core i5 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£349.99</div>
+                            <div class="product-rrp">RRP £749</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188222330797" 
+                                data-title="Microsoft Surface Pro 7 Plus" 
+                                data-price="349.99" 
+                                data-image="https://i.ebayimg.com/images/g/kmgAAeSwLydpyShn/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7 Plus"
+                                data-cpu="Intel Core i5"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£349.99"
+                                data-rrp="£749">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187374352503 -->
+                <div class="product-card" data-category="pro" data-price="397.36" data-date="2026-04-01">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/PWMAAeSwV5FoYTZt/s-l500.webp" alt="Microsoft Surface Pro 7 Plus image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7 Plus</h3>
+                        <p class="product-specs">Intel Core i5 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£397.36</div>
+                            <div class="product-rrp">RRP £849</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187374352503" 
+                                data-title="Microsoft Surface Pro 7 Plus" 
+                                data-price="397.36" 
+                                data-image="https://i.ebayimg.com/images/g/PWMAAeSwV5FoYTZt/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7 Plus"
+                                data-cpu="Intel Core i5"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£397.36"
+                                data-rrp="£849">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187816191962 -->
+                <div class="product-card" data-category="pro" data-price="399.99" data-date="2026-04-09">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/aK4AAeSwX0dpNEBF/s-l500.webp" alt="Microsoft Surface Pro 7+ image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7+</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£399.99</div>
+                            <div class="product-rrp">RRP £899</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187816191962" 
+                                data-title="Microsoft Surface Pro 7+" 
+                                data-price="399.99" 
+                                data-image="https://i.ebayimg.com/images/g/aK4AAeSwX0dpNEBF/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7+"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£399.99"
+                                data-rrp="£899">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187661887626 -->
+                <div class="product-card" data-category="laptop" data-price="400.01" data-date="2026-05-24">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/DGkAAeSwEplo84ln/s-l500.webp" alt="Microsoft Surface Laptop 4 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Laptop 4</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 512GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£400.01</div>
+                            <div class="product-rrp">RRP £899</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187661887626" 
+                                data-title="Microsoft Surface Laptop 4" 
+                                data-price="400.01" 
+                                data-image="https://i.ebayimg.com/images/g/DGkAAeSwEplo84ln/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Laptop 4"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="512GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£400.01"
+                                data-rrp="£899">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188016101317 -->
+                <div class="product-card" data-category="pro" data-price="349.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/AhYAAeSwNI1pRLHL/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£349.99</div>
+                            <div class="product-rrp">RRP £749</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188016101317" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="349.99" 
+                                data-image="https://i.ebayimg.com/images/g/AhYAAeSwNI1pRLHL/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£349.99"
+                                data-rrp="£749">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188016100471 -->
+                <div class="product-card" data-category="pro" data-price="349.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/vBwAAeSw8gJpf8bt/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£349.99</div>
+                            <div class="product-rrp">RRP £749</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188016100471" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="349.99" 
+                                data-image="https://i.ebayimg.com/images/g/vBwAAeSw8gJpf8bt/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£349.99"
+                                data-rrp="£749">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187688095561 -->
+                <div class="product-card" data-category="pro" data-price="300.01" data-date="2026-04-09">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/0hIAAeSwUXdo~1-9/s-l500.webp" alt="Microsoft Surface Pro 7+ image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge good">Defect / Reduced Price</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7+</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£300.01</div>
+                            <div class="product-rrp">RRP £649</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187688095561" 
+                                data-title="Microsoft Surface Pro 7+" 
+                                data-price="300.01" 
+                                data-image="https://i.ebayimg.com/images/g/0hIAAeSwUXdo~1-9/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7+"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Defect / Reduced Price"
+                                data-price="£300.01"
+                                data-rrp="£649">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187882009004 -->
+                <div class="product-card" data-category="laptop" data-price="449.99" data-date="2026-05-24">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/ZNUAAeSwVERpPfno/s-l500.webp" alt="Microsoft Surface Laptop 4 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge like-new">Like New</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Laptop 4</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£449.99</div>
+                            <div class="product-rrp">RRP £999</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187882009004" 
+                                data-title="Microsoft Surface Laptop 4" 
+                                data-price="449.99" 
+                                data-image="https://i.ebayimg.com/images/g/ZNUAAeSwVERpPfno/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Laptop 4"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Like New"
+                                data-price="£449.99"
+                                data-rrp="£999">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 188223041230 -->
+                <div class="product-card" data-category="pro" data-price="499.99" data-date="2026-04-25">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/nJwAAeSwkXVpyXFv/s-l500.webp" alt="Microsoft Surface Pro 7 plus image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7 plus</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 1TB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£499.99</div>
+                            <div class="product-rrp">RRP £1099</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="188223041230" 
+                                data-title="Microsoft Surface Pro 7 plus" 
+                                data-price="499.99" 
+                                data-image="https://i.ebayimg.com/images/g/nJwAAeSwkXVpyXFv/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7 plus"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="1TB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£499.99"
+                                data-rrp="£1099">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Card 187856214587 -->
+                <div class="product-card" data-category="pro" data-price="399.99" data-date="2026-04-11">
+                    <div class="card-image-container">
+                        
+                        <img src="https://i.ebayimg.com/images/g/CUIAAeSwl1JpRLOS/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-eyebrow">
+                            <span class="condition-badge excellent">Fully Tested</span>
+                            <span class="stock-alert"><i class="fa-solid fa-circle-check"></i> In Stock</span>
+                        </div>
+                        <h3 class="product-name">Microsoft Surface Pro 7</h3>
+                        <p class="product-specs">Intel Core i7 · 16GB RAM · 256GB SSD</p>
+                        
+                        <div class="product-price-row">
+                            <div class="product-price">£399.99</div>
+                            <div class="product-rrp">RRP £899</div>
+                        </div>
+                        
+                        <button class="btn btn-primary btn-full-width add-to-cart-btn" 
+                                data-id="187856214587" 
+                                data-title="Microsoft Surface Pro 7" 
+                                data-price="399.99" 
+                                data-image="https://i.ebayimg.com/images/g/CUIAAeSwl1JpRLOS/s-l500.webp">
+                            Add to Cart
+                        </button>
+                        
+                        <button class="view-details-link" 
+                                data-title="Microsoft Surface Pro 7"
+                                data-cpu="Intel Core i7"
+                                data-ram="16GB RAM"
+                                data-storage="256GB SSD"
+                                data-condition="Fully Tested"
+                                data-price="£399.99"
+                                data-rrp="£899">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+    
+            </div>
+            
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>No devices found</h3>
+                <p>Try matching another model or clearing filters.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Buy From Us Section -->
+    <section class="why-buy-section" id="why-buy">
+        <div class="container">
+            <div class="why-buy-grid">
+                <div class="why-buy-col">
+                    <div class="why-buy-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Diagnostics Verified</h3>
+                    <p>Every device goes through our exhaustive hardware test suite before dispatch.</p>
+                </div>
+                <div class="why-buy-col">
+                    <div class="why-buy-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>12-Month Warranty</h3>
+                    <p>Full device coverage for one calendar year, with no hidden catches or terms.</p>
+                </div>
+                <div class="why-buy-col">
+                    <div class="why-buy-icon"><i class="fa-solid fa-paper-plane"></i></div>
+                    <h3>Free UK Delivery</h3>
+                    <p>Dispatched next-day tracking via Royal Mail at zero shipping cost to you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section" id="reviews">
+        <div class="container">
+            <div class="store-header text-center">
+                <h2>What Our Customers Say</h2>
+                <div class="accent-line"></div>
+            </div>
+
+            <div class="reviews-grid">
+                
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Excellent seller. The Surface Laptop arrived safely and is exactly as described. Good packaging, almost like new. Honest and reliable store."</p>
+                    <div class="review-footer">
+                        <div class="reviewer-name">u***l</div>
+                        <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Purchase</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Delivered in perfect condition. It came with the charger, very clean, and extremely fast shipping. Price was competitive."</p>
+                    <div class="review-footer">
+                        <div class="reviewer-name">m***a</div>
+                        <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Purchase</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-rating">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Superb experience. Ordered Saturday; received Monday. Robusted package and device. Recommended transaction."</p>
+                    <div class="review-footer">
+                        <div class="reviewer-name">n***0</div>
+                        <span class="verified-badge"><i class="fa-solid fa-circle-check"></i> Verified Purchase</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Specs Modal -->
+    <div class="modal-overlay" id="detailsModal">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+            <h2 id="modalTitle">Surface Device Specifications</h2>
+            <div class="modal-body-content">
+                <div class="modal-spec-row">
+                    <strong>Processor (CPU)</strong>
+                    <span id="modalCpu">-</span>
+                </div>
+                <div class="modal-spec-row">
+                    <strong>System Memory</strong>
+                    <span id="modalRam">-</span>
+                </div>
+                <div class="modal-spec-row">
+                    <strong>Solid State Drive</strong>
+                    <span id="modalStorage">-</span>
+                </div>
+                <div class="modal-spec-row">
+                    <strong>Item Condition</strong>
+                    <span id="modalCondition">-</span>
+                </div>
+                <div class="modal-spec-row">
+                    <strong>Warranty Duration</strong>
+                    <span>12 Months Hardware Support</span>
+                </div>
+                <div class="modal-spec-row">
+                    <strong>Shipping Policy</strong>
+                    <span>Free Tracked Next-Day UK Postage</span>
+                </div>
+            </div>
+            
+            <div class="modal-footer-row">
+                <div class="modal-price-box">
+                    <span class="modal-price-main" id="modalPrice">-</span>
+                    <span class="modal-price-rrp" id="modalRrp">-</span>
+                </div>
+                <button class="btn btn-primary" id="modalAddBtn">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3>Your Shopping Cart</h3>
+            <button class="cart-drawer-close" id="cartDrawerClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-drawer-items" id="cartItemsList">
+            <!-- Dynamic elements go here -->
+            <div class="cart-empty-message">Your shopping cart is empty</div>
+        </div>
+        <div class="cart-drawer-footer">
+            <div class="cart-footer-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">£0.00</span>
+            </div>
+            <div class="cart-footer-row">
+                <span>Delivery</span>
+                <span class="delivery-free">FREE</span>
+            </div>
+            <button class="btn btn-primary btn-full-width checkout-btn" id="stripeCheckoutBtn">
+                <i class="fa-solid fa-credit-card"></i> Checkout Securely via Stripe
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="store-footer">
+        <div class="container footer-grid">
+            <div class="footer-left-col">
+                <a href="index.html" class="logo footer-logo">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>LAS <span class="accent-text">LAPTOPS</span></span>
+                </a>
+                <p class="footer-tagline">Premium Microsoft Surface specialists. Tested, verified refurbished computers with 12 months warranty and next-day postage.</p>
+                <div class="footer-trust-indicators">
+                    <div class="checkout-badge">
+                        <i class="fa-solid fa-lock"></i> SSL Secure Checkout
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-right-col">
+                <div class="footer-links-group">
+                    <h4>Shop Range</h4>
+                    <a href="#store">Surface Pro</a>
+                    <a href="#store">Surface Laptop</a>
+                    <a href="#store">Surface Book</a>
+                    <a href="#store">Surface Go</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Support &amp; Services</h4>
+                    <a href="../las-tech-repairs/index.html" target="_blank">Repair Service</a>
+                    <a href="#why-buy">FAQs</a>
+                    <a href="#why-buy">Contact Support</a>
+                    <a href="#why-buy">Returns Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 LAS Laptops. All rights reserved. Registered business operating in Chessington and South London.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts for cart, filter, sort, modal and menu -->
+    <script>
+        // DOM Cache
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        const filterPills = document.querySelectorAll('.filter-pill');
+        const sortSelect = document.getElementById('sortSelect');
+        const productGrid = document.getElementById('productGrid');
+        const productCards = Array.from(document.querySelectorAll('.product-card'));
+        const emptyState = document.getElementById('emptyState');
+        
+        const cartToggleBtn = document.getElementById('cartToggleBtn');
+        const cartBadge = document.getElementById('cartBadge');
+        const cartDrawer = document.getElementById('cartDrawer');
+        const cartOverlay = document.getElementById('cartOverlay');
+        const cartDrawerClose = document.getElementById('cartDrawerClose');
+        const cartItemsList = document.getElementById('cartItemsList');
+        const cartSubtotal = document.getElementById('cartSubtotal');
+        const stripeCheckoutBtn = document.getElementById('stripeCheckoutBtn');
+
+        const detailsModal = document.getElementById('detailsModal');
+        const modalCloseBtn = document.getElementById('modalCloseBtn');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalCpu = document.getElementById('modalCpu');
+        const modalRam = document.getElementById('modalRam');
+        const modalStorage = document.getElementById('modalStorage');
+        const modalCondition = document.getElementById('modalCondition');
+        const modalPrice = document.getElementById('modalPrice');
+        const modalRrp = document.getElementById('modalRrp');
+        const modalAddBtn = document.getElementById('modalAddBtn');
+
+        // Cart State
+        let cart = JSON.parse(localStorage.getItem('las_store_cart')) || [];
+        let activeFilter = 'all';
+
+        // 1. MOBILE MENU TOGGLE
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const isOpen = navMenu.classList.contains('active');
+            menuToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+
+        // 2. THEME SWITCHER (DARK MODE)
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+            const isDark = document.body.classList.contains('dark');
+            localStorage.setItem('las_theme', isDark ? 'dark' : 'light');
+            themeToggleBtn.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+        });
+
+        // Init theme preference
+        if (localStorage.getItem('las_theme') === 'dark') {
+            document.body.classList.add('dark');
+            themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        }
+
+        // 3. FILTER LOGIC
+        filterPills.forEach(pill => {
+            pill.addEventListener('click', () => {
+                filterPills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                activeFilter = pill.getAttribute('data-filter');
+                applyFiltersAndSorting();
+            });
+        });
+
+        // 4. SORT LOGIC
+        sortSelect.addEventListener('change', applyFiltersAndSorting);
+
+        function applyFiltersAndSorting() {
+            let visibleCount = 0;
+            
+            // Filter
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (activeFilter === 'all' || category === activeFilter) {
+                    card.style.display = 'flex';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Sort
+            const sortBy = sortSelect.value;
+            if (sortBy !== 'default') {
+                const sorted = productCards.filter(c => c.style.display !== 'none').sort((a, b) => {
+                    if (sortBy === 'price-asc') {
+                        return parseFloat(a.getAttribute('data-price')) - parseFloat(b.getAttribute('data-price'));
+                    } else if (sortBy === 'price-desc') {
+                        return parseFloat(b.getAttribute('data-price')) - parseFloat(a.getAttribute('data-price'));
+                    } else if (sortBy === 'newest') {
+                        return new Date(b.getAttribute('data-date')) - new Date(a.getAttribute('data-date'));
+                    }
+                    return 0;
+                });
+                sorted.forEach(card => productGrid.appendChild(card));
+            }
+
+            // Empty state
+            emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+        }
+
+        // 5. CART ENGINE
+        function updateCartBadge() {
+            const count = cart.reduce((sum, item) => sum + item.qty, 0);
+            cartBadge.textContent = count;
+        }
+
+        // Add visual animation on add to cart
+        function animateCartBtn() {
+            cartToggleBtn.classList.add('pulse-anim');
+            setTimeout(() => {
+                cartToggleBtn.classList.remove('pulse-anim');
+            }, 500);
+        }
+
+        function saveCart() {
+            localStorage.setItem('las_store_cart', JSON.stringify(cart));
+            updateCartBadge();
+            renderCartItems();
+        }
+
+        function addToCart(id, title, price, image) {
+            const existing = cart.find(item => item.id === id);
+            if (existing) {
+                existing.qty++;
+            } else {
+                cart.push({ id, title, price: parseFloat(price), image, qty: 1 });
+            }
+            saveCart();
+            animateCartBtn();
+            openCartDrawer();
+        }
+
+        window.changeCartQty = function(id, delta) {
+            const item = cart.find(item => item.id === id);
+            if (item) {
+                item.qty += delta;
+                if (item.qty <= 0) {
+                    cart = cart.filter(i => i.id !== id);
+                }
+                saveCart();
+            }
+        };
+
+        window.removeCartItem = function(id) {
+            cart = cart.filter(i => i.id !== id);
+            saveCart();
+        };
+
+        function renderCartItems() {
+            if (cart.length === 0) {
+                cartItemsList.innerHTML = '<div class="cart-empty-message">Your shopping cart is empty</div>';
+                cartSubtotal.textContent = '£0.00';
+                return;
+            }
+
+            let subtotal = 0;
+            let listHTML = '';
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.qty;
+                subtotal += itemTotal;
+                listHTML += `
+                    <div class="cart-drawer-item">
+                        <img src="${item.image}" alt="${item.title}" onerror="this.src='laptop.jpg'">
+                        <div class="cart-item-info">
+                            <h4>${item.title}</h4>
+                            <div class="cart-item-price-line">£${item.price.toFixed(2)}</div>
+                            <div class="cart-item-actions-row">
+                                <div class="cart-qty-spinner">
+                                    <button onclick="changeCartQty('${item.id}', -1)">-</button>
+                                    <span>${item.qty}</span>
+                                    <button onclick="changeCartQty('${item.id}', 1)">+</button>
+                                </div>
+                                <button class="cart-remove-trash" onclick="removeCartItem('${item.id}')" aria-label="Remove item">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            cartItemsList.innerHTML = listHTML;
+            cartSubtotal.textContent = `£${subtotal.toFixed(2)}`;
+        }
+
+        function openCartDrawer() {
+            cartDrawer.classList.add('open');
+            cartOverlay.classList.add('active');
+        }
+
+        function closeCartDrawer() {
+            cartDrawer.classList.remove('open');
+            cartOverlay.classList.remove('active');
+        }
+
+        // Event hooks for cart
+        cartToggleBtn.addEventListener('click', openCartDrawer);
+        cartDrawerClose.addEventListener('click', closeCartDrawer);
+        cartOverlay.addEventListener('click', closeCartDrawer);
+
+        // Bind standard card add to cart buttons
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const id = btn.getAttribute('data-id');
+                const title = btn.getAttribute('data-title');
+                const price = btn.getAttribute('data-price');
+                const image = btn.getAttribute('data-image');
+                addToCart(id, title, price, image);
+            });
+        });
+
+        stripeCheckoutBtn.addEventListener('click', () => {
+            if (cart.length === 0) {
+                alert('Your cart is empty.');
+                return;
+            }
+            alert(`Connecting securely to Stripe to complete purchase of ${cartSubtotal.textContent}...`);
+        });
+
+        // 6. SPEC MODAL LOGIC
+        let modalActiveProduct = {};
+
+        document.querySelectorAll('.view-details-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const card = link.closest('.product-card');
+                const addBtn = card.querySelector('.add-to-cart-btn');
+                
+                modalActiveProduct = {
+                    id: addBtn.getAttribute('data-id'),
+                    title: addBtn.getAttribute('data-title'),
+                    price: addBtn.getAttribute('data-price'),
+                    image: addBtn.getAttribute('data-image')
+                };
+
+                modalTitle.textContent = link.getAttribute('data-title');
+                modalCpu.textContent = link.getAttribute('data-cpu');
+                modalRam.textContent = link.getAttribute('data-ram');
+                modalStorage.textContent = link.getAttribute('data-storage');
+                modalCondition.textContent = link.getAttribute('data-condition');
+                modalPrice.textContent = link.getAttribute('data-price');
+                modalRrp.textContent = 'RRP ' + link.getAttribute('data-rrp');
+
+                detailsModal.classList.add('active');
+            });
+        });
+
+        function closeDetailsModal() {
+            detailsModal.classList.remove('active');
+        }
+
+        modalCloseBtn.addEventListener('click', closeDetailsModal);
+        detailsModal.addEventListener('click', (e) => {
+            if (e.target === detailsModal) closeDetailsModal();
+        });
+
+        modalAddBtn.addEventListener('click', () => {
+            addToCart(
+                modalActiveProduct.id,
+                modalActiveProduct.title,
+                modalActiveProduct.price,
+                modalActiveProduct.image
+            );
+            closeDetailsModal();
+        });
+
+        // Initial trigger
+        saveCart();
+    </script>
+</body>
+</html>
