@@ -30,7 +30,7 @@
             <nav class="nav-menu" id="navMenu">
                 <a href="index.html" class="nav-link ">Home</a>
                 <a href="shop.html" class="nav-link active">Laptops</a>
-                <a href="../las-tech-repairs/index.html" class="nav-link-repair" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i> Repair Service</a>
+                <a href="https://mowleed2000.github.io/LasTechrepair/" class="nav-link-repair" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i> Repair Service</a>
                 <a href="contact.html" class="nav-link ">Contact &amp; Support</a>
                 <div class="nav-actions">
                     <button class="cart-btn" id="cartToggleBtn">
@@ -146,8 +146,9 @@
                 <!-- Main Grid Column -->
                 <div class="shop-main">
                     <div class="filter-sort-bar">
-                        <div class="results-count" id="visible-count">
-                            0 items
+                        <div class="search-box-wrapper">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search Surface models (e.g. Pro 7, Laptop 3, i7, 16GB)...">
                         </div>
                         
                         <div class="sort-selector-wrapper">
@@ -173,6 +174,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const checkboxes = document.querySelectorAll('.spec-filter');
+            const searchInput = document.getElementById('searchInput');
             const grid = document.getElementById('productGrid');
             const cards = Array.from(document.querySelectorAll('.product-card'));
             const sortDropdown = document.getElementById('sortDropdown');
@@ -181,6 +183,10 @@
             checkboxes.forEach(cb => {
                 cb.addEventListener('change', filterAndSort);
             });
+
+            if (searchInput) {
+                searchInput.addEventListener('input', filterAndSort);
+            }
 
             sortDropdown.addEventListener('change', filterAndSort);
 
@@ -200,6 +206,8 @@
                     }
                 });
 
+                const searchVal = searchInput ? searchInput.value.toLowerCase() : '';
+
                 // 2. Filter cards
                 let visibleCards = [];
                 
@@ -207,12 +215,16 @@
                     const r = card.getAttribute('data-ram-type');
                     const s = card.getAttribute('data-storage-type');
                     const c = card.getAttribute('data-cpu-type');
+                    
+                    const titleText = card.querySelector('.card-title').textContent.toLowerCase();
+                    const specsText = card.querySelector('.card-specs-summary').textContent.toLowerCase();
 
                     const ramMatch = activeFilters.ram.length === 0 || activeFilters.ram.includes(r);
                     const storageMatch = activeFilters.storage.length === 0 || activeFilters.storage.includes(s);
                     const cpuMatch = activeFilters.cpu.length === 0 || activeFilters.cpu.includes(c);
+                    const searchMatch = !searchVal || titleText.includes(searchVal) || specsText.includes(searchVal);
 
-                    if (ramMatch && storageMatch && cpuMatch) {
+                    if (ramMatch && storageMatch && cpuMatch && searchMatch) {
                         card.style.display = 'flex';
                         visibleCards.push(card);
                     } else {
@@ -238,9 +250,6 @@
                     // Append sorted cards back to DOM
                     visibleCards.forEach(c => grid.appendChild(c));
                 }
-
-                // 4. Update count label
-                countLabel.textContent = `${visibleCards.length} item${visibleCards.length !== 1 ? 's' : ''}`;
             }
         });
     </script>
@@ -276,9 +285,9 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="../las-tech-repairs/index.html">Screwdriver Repair Hub</a></li>
-                        <li><a href="../las-tech-repairs/laptop-screen.html">Screen Replacement</a></li>
-                        <li><a href="../las-tech-repairs/slow-performance.html">RAM &amp; Storage Upgrades</a></li>
+                        <li><a href="https://mowleed2000.github.io/LasTechrepair/" target="_blank">Screwdriver Repair Hub</a></li>
+                        <li><a href="https://mowleed2000.github.io/LasTechrepair/laptop-screen.html" target="_blank">Screen Replacement</a></li>
+                        <li><a href="https://mowleed2000.github.io/LasTechrepair/slow-performance.html" target="_blank">RAM &amp; Storage Upgrades</a></li>
                         <li><a href="contact.html">Support Desk</a></li>
                     </ul>
                 </div>
@@ -331,13 +340,19 @@
         </div>
     </div>
 
+    <!-- Product Zoom Lightbox -->
+    <div class="zoom-lightbox" id="zoomLightbox" onclick="closeZoomLightbox()">
+        <button class="zoom-close" aria-label="Close Zoom"><i class="fa-solid fa-xmark"></i></button>
+        <img id="zoomLightboxImg" src="" alt="Zoomed product view">
+    </div>
+
     <!-- Product Detail Modal -->
     <div class="details-modal" id="detailsModal">
         <div class="modal-content">
             <button class="modal-close" id="modalCloseBtn" aria-label="Close Details"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-grid">
                 <div class="modal-image-col">
-                    <img id="modalProductImage" src="laptop.jpg" alt="Product Image">
+                    <img id="modalProductImage" src="laptop.jpg" alt="Product Image" onclick="openZoomLightbox(this.src)" style="cursor: zoom-in;">
                 </div>
                 <div class="modal-info-col">
                     <span class="modal-badge"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
@@ -419,6 +434,24 @@
             menuToggle.querySelector('i').classList.toggle('fa-bars');
             menuToggle.querySelector('i').classList.toggle('fa-xmark');
         });
+
+        // Product Zoom Lightbox Logic
+        window.openZoomLightbox = function(src) {
+            const zoomLightbox = document.getElementById('zoomLightbox');
+            const zoomImg = document.getElementById('zoomLightboxImg');
+            zoomImg.src = src;
+            zoomLightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeZoomLightbox = function() {
+            const zoomLightbox = document.getElementById('zoomLightbox');
+            zoomLightbox.classList.remove('active');
+            const detailsActive = document.getElementById('detailsModal').classList.contains('active');
+            if (!detailsActive) {
+                document.body.style.overflow = '';
+            }
+        };
 
         function saveCart() {
             localStorage.setItem('las_cart', JSON.stringify(cart));

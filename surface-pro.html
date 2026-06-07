@@ -30,7 +30,7 @@
             <nav class="nav-menu" id="navMenu">
                 <a href="index.html" class="nav-link ">Home</a>
                 <a href="shop.html" class="nav-link active">Laptops</a>
-                <a href="../las-tech-repairs/index.html" class="nav-link-repair" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i> Repair Service</a>
+                <a href="https://mowleed2000.github.io/LasTechrepair/" class="nav-link-repair" target="_blank"><i class="fa-solid fa-screwdriver-wrench"></i> Repair Service</a>
                 <a href="contact.html" class="nav-link ">Contact &amp; Support</a>
                 <div class="nav-actions">
                     <button class="cart-btn" id="cartToggleBtn">
@@ -146,8 +146,9 @@
                 <!-- Main Grid Column -->
                 <div class="shop-main">
                     <div class="filter-sort-bar">
-                        <div class="results-count" id="visible-count">
-                            22 items
+                        <div class="search-box-wrapper">
+                            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            <input type="text" class="search-input" id="searchInput" placeholder="Search Surface models (e.g. Pro 7, Laptop 3, i7, 16GB)...">
                         </div>
                         
                         <div class="sort-selector-wrapper">
@@ -164,7 +165,7 @@
                     <div class="product-grid" id="productGrid">
                         
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/8-EAAeSwCmBqEbI5/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -184,7 +185,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/-NMAAeSwVqBqCMZA/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -204,7 +205,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="8gb" data-storage-type="256gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/E4QAAeSwcnFp48Qd/s-l500.webp" alt="Microsoft Surface Pro 7 Plus image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -224,7 +225,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/xScAAeSwCB9p44eX/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -244,7 +245,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="512gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/yjEAAeSwZqJqEzOa/s-l500.webp" alt="Microsoft Surface Pro 6 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -264,7 +265,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/IgQAAeSwU9BqCr0w/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -284,7 +285,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="8gb" data-storage-type="256gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/uNUAAeSwmT1p47jn/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -304,7 +305,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="8gb" data-storage-type="512gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/ogUAAeSw16ZpyX5H/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -324,7 +325,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="8gb" data-storage-type="128gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/0kIAAeSwAV9p45uM/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -344,7 +345,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/6ykAAeSwL4ppqKuH/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -364,7 +365,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="8gb" data-storage-type="128gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/DyMAAeSw~RBpUDcb/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -384,7 +385,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/t40AAeSwIkZpf8~Q/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -404,7 +405,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/BQ0AAeSwEOBpyTR~/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -424,7 +425,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="8gb" data-storage-type="128gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/Ly0AAeSwdGlphk6F/s-l500.webp" alt="Microsoft Surface Pro 8 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -444,7 +445,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/kmgAAeSwLydpyShn/s-l500.webp" alt="Microsoft Surface Pro 7 Plus image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -464,7 +465,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i5">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/PWMAAeSwV5FoYTZt/s-l500.webp" alt="Microsoft Surface Pro 7 Plus image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -484,7 +485,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/aK4AAeSwX0dpNEBF/s-l500.webp" alt="Microsoft Surface Pro 7+ image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -504,7 +505,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/AhYAAeSwNI1pRLHL/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -524,7 +525,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/vBwAAeSw8gJpf8bt/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -544,7 +545,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/0hIAAeSwUXdo~1-9/s-l500.webp" alt="Microsoft Surface Pro 7+ image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -564,7 +565,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="1tb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/nJwAAeSwkXVpyXFv/s-l500.webp" alt="Microsoft Surface Pro 7 plus image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -584,7 +585,7 @@
             </div>
     
             <div class="product-card" data-category="pro" data-ram-type="16gb" data-storage-type="256gb" data-cpu-type="i7">
-                <div class="card-image-wrapper">
+                <div class="card-image-wrapper" onclick="this.closest('.product-card').querySelector('.view-details-link').click();" style="cursor: pointer;">
                     <span class="condition-badge excellent"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
                     <span class="stock-badge"><i class="fa-solid fa-box-open"></i> In Stock</span>
                     <img src="https://i.ebayimg.com/images/g/CUIAAeSwl1JpRLOS/s-l500.webp" alt="Microsoft Surface Pro 7 image" class="card-img" onerror="this.src='laptop.jpg'">
@@ -613,6 +614,7 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const checkboxes = document.querySelectorAll('.spec-filter');
+            const searchInput = document.getElementById('searchInput');
             const grid = document.getElementById('productGrid');
             const cards = Array.from(document.querySelectorAll('.product-card'));
             const sortDropdown = document.getElementById('sortDropdown');
@@ -621,6 +623,10 @@
             checkboxes.forEach(cb => {
                 cb.addEventListener('change', filterAndSort);
             });
+
+            if (searchInput) {
+                searchInput.addEventListener('input', filterAndSort);
+            }
 
             sortDropdown.addEventListener('change', filterAndSort);
 
@@ -640,6 +646,8 @@
                     }
                 });
 
+                const searchVal = searchInput ? searchInput.value.toLowerCase() : '';
+
                 // 2. Filter cards
                 let visibleCards = [];
                 
@@ -647,12 +655,16 @@
                     const r = card.getAttribute('data-ram-type');
                     const s = card.getAttribute('data-storage-type');
                     const c = card.getAttribute('data-cpu-type');
+                    
+                    const titleText = card.querySelector('.card-title').textContent.toLowerCase();
+                    const specsText = card.querySelector('.card-specs-summary').textContent.toLowerCase();
 
                     const ramMatch = activeFilters.ram.length === 0 || activeFilters.ram.includes(r);
                     const storageMatch = activeFilters.storage.length === 0 || activeFilters.storage.includes(s);
                     const cpuMatch = activeFilters.cpu.length === 0 || activeFilters.cpu.includes(c);
+                    const searchMatch = !searchVal || titleText.includes(searchVal) || specsText.includes(searchVal);
 
-                    if (ramMatch && storageMatch && cpuMatch) {
+                    if (ramMatch && storageMatch && cpuMatch && searchMatch) {
                         card.style.display = 'flex';
                         visibleCards.push(card);
                     } else {
@@ -678,9 +690,6 @@
                     // Append sorted cards back to DOM
                     visibleCards.forEach(c => grid.appendChild(c));
                 }
-
-                // 4. Update count label
-                countLabel.textContent = `${visibleCards.length} item${visibleCards.length !== 1 ? 's' : ''}`;
             }
         });
     </script>
@@ -716,9 +725,9 @@
                 <div class="footer-col">
                     <h4>Services</h4>
                     <ul class="footer-links">
-                        <li><a href="../las-tech-repairs/index.html">Screwdriver Repair Hub</a></li>
-                        <li><a href="../las-tech-repairs/laptop-screen.html">Screen Replacement</a></li>
-                        <li><a href="../las-tech-repairs/slow-performance.html">RAM &amp; Storage Upgrades</a></li>
+                        <li><a href="https://mowleed2000.github.io/LasTechrepair/" target="_blank">Screwdriver Repair Hub</a></li>
+                        <li><a href="https://mowleed2000.github.io/LasTechrepair/laptop-screen.html" target="_blank">Screen Replacement</a></li>
+                        <li><a href="https://mowleed2000.github.io/LasTechrepair/slow-performance.html" target="_blank">RAM &amp; Storage Upgrades</a></li>
                         <li><a href="contact.html">Support Desk</a></li>
                     </ul>
                 </div>
@@ -771,13 +780,19 @@
         </div>
     </div>
 
+    <!-- Product Zoom Lightbox -->
+    <div class="zoom-lightbox" id="zoomLightbox" onclick="closeZoomLightbox()">
+        <button class="zoom-close" aria-label="Close Zoom"><i class="fa-solid fa-xmark"></i></button>
+        <img id="zoomLightboxImg" src="" alt="Zoomed product view">
+    </div>
+
     <!-- Product Detail Modal -->
     <div class="details-modal" id="detailsModal">
         <div class="modal-content">
             <button class="modal-close" id="modalCloseBtn" aria-label="Close Details"><i class="fa-solid fa-xmark"></i></button>
             <div class="modal-grid">
                 <div class="modal-image-col">
-                    <img id="modalProductImage" src="laptop.jpg" alt="Product Image">
+                    <img id="modalProductImage" src="laptop.jpg" alt="Product Image" onclick="openZoomLightbox(this.src)" style="cursor: zoom-in;">
                 </div>
                 <div class="modal-info-col">
                     <span class="modal-badge"><i class="fa-solid fa-circle-check"></i> Fully Tested</span>
@@ -859,6 +874,24 @@
             menuToggle.querySelector('i').classList.toggle('fa-bars');
             menuToggle.querySelector('i').classList.toggle('fa-xmark');
         });
+
+        // Product Zoom Lightbox Logic
+        window.openZoomLightbox = function(src) {
+            const zoomLightbox = document.getElementById('zoomLightbox');
+            const zoomImg = document.getElementById('zoomLightboxImg');
+            zoomImg.src = src;
+            zoomLightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        };
+
+        window.closeZoomLightbox = function() {
+            const zoomLightbox = document.getElementById('zoomLightbox');
+            zoomLightbox.classList.remove('active');
+            const detailsActive = document.getElementById('detailsModal').classList.contains('active');
+            if (!detailsActive) {
+                document.body.style.overflow = '';
+            }
+        };
 
         function saveCart() {
             localStorage.setItem('las_cart', JSON.stringify(cart));

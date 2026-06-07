@@ -438,51 +438,91 @@ body.dark .navbar {
 }
 
 .category-card {
-    background-color: var(--bg-card);
+    position: relative;
+    background-size: cover;
+    background-position: center;
     border: 1px solid var(--border-color);
     border-radius: 12px;
+    min-height: 320px;
     padding: 30px 24px;
     text-decoration: none;
-    color: var(--text-main);
-    transition: all 0.3s ease;
+    color: #ffffff;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 15%, rgba(15, 23, 42, 0.4) 65%, rgba(15, 23, 42, 0.1) 100%);
+    transition: background 0.4s ease;
+    z-index: 1;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.category-card:hover::before {
+    background: linear-gradient(to top, rgba(8, 145, 178, 0.95) 15%, rgba(8, 145, 178, 0.4) 65%, rgba(8, 145, 178, 0.1) 100%);
+}
+
+.category-card-content {
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.category-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+.cat-icon {
+    font-size: 1.8rem;
+    color: #06b6d4;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
-.cat-icon {
-    font-size: 2rem;
-    color: var(--primary);
-    margin-bottom: 20px;
+.category-card:hover .cat-icon {
+    transform: scale(1.1);
+    color: #ffffff;
 }
 
 .category-card h3 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 1.35rem;
+    font-weight: 750;
+    margin-bottom: 8px;
 }
 
 .category-card p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.88rem;
+    line-height: 1.45;
+    margin-bottom: 16px;
     flex-grow: 1;
 }
 
 .cat-count {
-    background-color: var(--bg-section);
-    color: var(--primary);
-    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 0.78rem;
     font-weight: 700;
     padding: 4px 12px;
     border-radius: 20px;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s;
+}
+
+.category-card:hover .cat-count {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* PRODUCT SECTION & MULTI-PAGE LAYOUT */
@@ -649,10 +689,36 @@ body.dark .navbar {
     border-bottom: 1px solid var(--border-color);
 }
 
-.results-count {
-    font-weight: 600;
+.search-box-wrapper {
+    position: relative;
+    flex-grow: 1;
+    max-width: 450px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px 10px 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    color: var(--text-main);
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
     color: var(--text-muted);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .sort-selector-wrapper {
@@ -1497,14 +1563,16 @@ body.dark .stock-badge {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     opacity: 0;
     visibility: hidden;
     z-index: 1100;
     transition: all 0.3s ease;
+    overflow-y: auto;
+    padding: 40px 15px;
 }
 
 .details-modal.active {
@@ -1515,13 +1583,72 @@ body.dark .stock-badge {
 .modal-content {
     background-color: var(--bg-card);
     width: 800px;
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 16px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     transform: translateY(20px);
     transition: transform 0.3s ease;
+    margin: auto;
+}
+
+/* ZOOM LIGHTBOX CSS */
+.zoom-lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 42, 0.96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1200;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: zoom-out;
+}
+
+.zoom-lightbox.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.zoom-lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    border-radius: 8px;
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoom-lightbox.active img {
+    transform: scale(1);
+}
+
+.zoom-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.zoom-close:hover {
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .details-modal.active .modal-content {
